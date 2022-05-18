@@ -5,6 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import Divider from '@mui/material/Divider';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function ProductCard() {
     return (
@@ -13,19 +15,25 @@ function ProductCard() {
         component="img"
         image="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/4.jpg"
         alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
+        />
+        <Divider />
+      <CardContent sx={{ paddingBottom:"8px"}}>
+          <Typography variant="subtitle2" gutterBottom component="div">$790.50</Typography>
+          <Typography variant="body1" component="h4" color="text.secondary" gutterBottom>Apple iPhone 12 Pro 6.1" RAM 6GB 512GB Unlocked</Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <CardActions sx={{ padding:"0px 16px 16px"}}>
+        <Button variant="contained" sx={{
+            marginRight: "4px",
+          textTransform: "inherit"
+           }}>Add to cart</Button>
+        <Button variant="outlined" color="inherit" sx={{
+            minWidth: "36px",
+            padding:"5px",
+            borderColor:"#dee2e6",
+            color:"#dee2e6",
+            '&:hover': {
+            color:"#1a76d2"
+        }}}><FavoriteIcon /></Button>
       </CardActions>
     </Card>
   );

@@ -23,7 +23,7 @@ function NewProducts() {
             margin: "2rem 0",
           }}
         >
-          <Grid container spacing={2}>
+          <Grid container spacing={3}>
             <Grid item xs={6} md={3}><ProductCard /></Grid>
             <Grid item xs={6} md={3}><ProductCard /></Grid>
             <Grid item xs={6} md={3}><ProductCard /></Grid>
