@@ -10,7 +10,12 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 function ProductCard() {
     return (
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{
+        maxWidth: 345,
+        '&: hover': {
+        boxShadow: 3
+        }
+      }}>
       <CardMedia
         component="img"
         image="https://bootstrap-ecommerce.com/bootstrap5-ecommerce/images/items/4.jpg"

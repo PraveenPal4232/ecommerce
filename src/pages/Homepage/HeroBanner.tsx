@@ -11,7 +11,9 @@ function HeroBanner() {
         height: 450,
         backgroundColor: 'primary.dark',
           }}>
-          <Container maxWidth="lg">
+      <Container maxWidth="md" sx={{
+        maxWidth:"1320px !important"
+          }}>
               <Box
                   sx={{
                       maxWidth: "475px",

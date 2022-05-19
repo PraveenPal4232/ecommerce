@@ -85,7 +85,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   
   return (
     <AppBar position="static" >
-      <Container maxWidth="lg">
+      <Container maxWidth="md" sx={{
+        maxWidth:"1320px !important"
+          }}>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
